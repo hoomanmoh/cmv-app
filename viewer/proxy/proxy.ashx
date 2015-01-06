@@ -392,6 +392,10 @@ public class proxy : IHttpHandler {
 
     private System.Net.WebResponse doHTTPRequest(string uri, byte[] bytes, string method, string referer, string contentType, System.Net.NetworkCredential credentials = null)
     {
+        //Trust all certificates
+        System.Net.ServicePointManager.ServerCertificateValidationCallback =
+            ((sender, certificate, chain, sslPolicyErrors) => true);
+        
         System.Net.HttpWebRequest req = (System.Net.HttpWebRequest)System.Net.HttpWebRequest.Create(uri);
         req.ServicePoint.Expect100Continue = false;
         req.Referer = referer;

@@ -1,6 +1,6 @@
 .gis_GeocoderDijit .zoomSearchButton {
 	width: 30px;
-	height: 26px;
+	height: 30px;
 	padding-top: 4px;
 	text-align: center;
 	cursor: pointer;
@@ -79,15 +79,15 @@
 	height: 0;
 }
 .gis_GeocoderDijit .esriGeocoder {
-	display: block;
-	width: 100%;
-	margin: 0px;
-	margin-left: -1px;
+	display: block !important; 
+	width: 100% !important;
+	margin: 0px !important;
+	margin-left: -1px !important;
 	background: #fff;
-	border: 1px solid #57585A;
-	border-left: 0px;
-	-webkit-border-radius: 0 5px 5px 0;
-	border-radius: 0 5px 5px 0;
+	border: 1px solid #57585A !important;
+	border-left: 0px !important;
+	-webkit-border-radius: 0 5px 5px 0 !important;
+	border-radius: 0 5px 5px 0 !important;
 }
 .gis_GeocoderDijit .esriGeocoderActive, .gis_GeocoderDijit .esriGeocoderMenuActive {
 	border-bottom: 0;
